@@ -22,6 +22,8 @@ def rotate(img, angle, rotPoint = None):
 
     return cv.warpAffine(img, rotMat, dimensions) 
 
+# Flipping the Image
+flipped = cv.flip(img, -1)
 
 translated =  translate(img, 100, 100)
 rotated = rotate(img, 45)
@@ -29,5 +31,6 @@ rotated = rotate(img, 45)
 cv.imshow("Lady", img)
 cv.imshow("Translated", translated)
 cv.imshow("Rotated", rotated)
+cv.imshow("Flipped", flipped)
 
 cv.waitKey(0)
