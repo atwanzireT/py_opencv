@@ -20,7 +20,7 @@ bitwise_or = cv.bitwise_or(rectangle, circle)
 cv.imshow("Bitwise Or", bitwise_or)
 
 # bitwise XOR --> non-intersecting regions
-bitwise_xor = cv.bitwise_not(rectangle, circle)
+bitwise_xor = cv.bitwise_xor(rectangle, circle)
 cv.imshow("Bitwise XOR", bitwise_xor)
 
 # bitwise NOT
